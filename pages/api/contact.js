@@ -14,7 +14,7 @@ async function contactHandler(req, res) {
       res.status(422).json({ message: "invalid input." }); // JSON is the default way to exchange data through api
       return;
     }
-    // Store it in a database.
+    // Store it in a database
     const newMessage = {
       email,
       name,
